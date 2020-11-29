@@ -78,7 +78,6 @@
     <div id="dimensionDiv" style="height:4400px;"></div>
     <div>&nbsp;&nbsp;. . . .</div>
     <script type="text/javascript">
-        window.location.hash = "[" + screen.width + "x" + screen.height + "]";
         function showHideScroll() { /*Click on K Icon to toggle scrollbars*/
             if (!window.kcaScrollHidden) {
                 document.documentElement.style.overflow = 'hidden';
@@ -117,6 +116,7 @@
             document.getElementById('dimensionDiv').style.width = w + 'px';
             document.getElementById('dimensionDiv').style.height = h + 'px';
         }
+        window.location.hash = "[" + screen.width + "x" + screen.height + "]";
     </script>
 </body>
 
